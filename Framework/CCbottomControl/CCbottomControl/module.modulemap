@@ -1,0 +1,6 @@
+framework module CCbottomControl {
+    umbrella header "CCbottomControl-Umbrella.h"
+    
+    export *
+    module * { export * }
+}

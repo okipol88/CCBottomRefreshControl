@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE11BBAB1D4E821F00E1BAE6 /* CCbottomControl.h in Headers */ = {isa = PBXBuildFile; fileRef = CE11BBAA1D4E821F00E1BAE6 /* CCbottomControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE11BBB61D4E823900E1BAE6 /* UIScrollView+BottomRefreshControl.h in Headers */ = {isa = PBXBuildFile; fileRef = CE11BBB41D4E823900E1BAE6 /* UIScrollView+BottomRefreshControl.h */; };
+		CE11BBAB1D4E821F00E1BAE6 /* CCbottomControl-Umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE11BBAA1D4E821F00E1BAE6 /* CCbottomControl-Umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE11BBB61D4E823900E1BAE6 /* UIScrollView+BottomRefreshControl.h in Headers */ = {isa = PBXBuildFile; fileRef = CE11BBB41D4E823900E1BAE6 /* UIScrollView+BottomRefreshControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE11BBB71D4E823900E1BAE6 /* UIScrollView+BottomRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE11BBB51D4E823900E1BAE6 /* UIScrollView+BottomRefreshControl.m */; };
 		CE11BBBA1D4E8D4400E1BAE6 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE11BBB91D4E8D4400E1BAE6 /* Masonry.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE11BBA71D4E821F00E1BAE6 /* CCbottomControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCbottomControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE11BBAA1D4E821F00E1BAE6 /* CCbottomControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCbottomControl.h; sourceTree = "<group>"; };
+		CE11BBAA1D4E821F00E1BAE6 /* CCbottomControl-Umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCbottomControl-Umbrella.h"; sourceTree = "<group>"; };
 		CE11BBAC1D4E821F00E1BAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE11BBB41D4E823900E1BAE6 /* UIScrollView+BottomRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+BottomRefreshControl.h"; sourceTree = "<group>"; };
 		CE11BBB51D4E823900E1BAE6 /* UIScrollView+BottomRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+BottomRefreshControl.m"; sourceTree = "<group>"; };
 		CE11BBB91D4E8D4400E1BAE6 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = Carthage/Build/iOS/Masonry.framework; sourceTree = "<group>"; };
+		CE11BC9E1D4F158000E1BAE6 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +56,9 @@
 		CE11BBA91D4E821F00E1BAE6 /* CCbottomControl */ = {
 			isa = PBXGroup;
 			children = (
-				CE11BBAA1D4E821F00E1BAE6 /* CCbottomControl.h */,
+				CE11BBAA1D4E821F00E1BAE6 /* CCbottomControl-Umbrella.h */,
 				CE11BBAC1D4E821F00E1BAE6 /* Info.plist */,
+				CE11BC9E1D4F158000E1BAE6 /* module.modulemap */,
 			);
 			path = CCbottomControl;
 			sourceTree = "<group>";
@@ -78,7 +80,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE11BBAB1D4E821F00E1BAE6 /* CCbottomControl.h in Headers */,
+				CE11BBAB1D4E821F00E1BAE6 /* CCbottomControl-Umbrella.h in Headers */,
 				CE11BBB61D4E823900E1BAE6 /* UIScrollView+BottomRefreshControl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +283,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "$(SRCROOT)/CCbottomControl/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vlasov.CCbottomControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -302,6 +305,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "$(SRCROOT)/CCbottomControl/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vlasov.CCbottomControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
