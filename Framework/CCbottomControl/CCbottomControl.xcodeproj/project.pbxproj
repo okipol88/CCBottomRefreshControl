@@ -96,7 +96,6 @@
 				CE11BBA31D4E821F00E1BAE6 /* Frameworks */,
 				CE11BBA41D4E821F00E1BAE6 /* Headers */,
 				CE11BBA51D4E821F00E1BAE6 /* Resources */,
-				CE11BBBB1D4E8D9700E1BAE6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -147,23 +146,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CE11BBBB1D4E8D9700E1BAE6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Masonry.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE11BBA21D4E821F00E1BAE6 /* Sources */ = {
@@ -331,6 +313,7 @@
 				CE11BBB11D4E821F00E1BAE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
